@@ -7,26 +7,31 @@ html {
 main {
     background-color: azure;
     display: grid;
-    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     grid-template-areas:
         "PB PB PB"
         "A B C";
+
 }
 
 .promotionalBanner {
     grid-area: PB;
+    text-align: center;
 }
 
 .sectionA {
     grid-area: A;
+    text-align: center;
 }
 
 .sectionB {
     grid-area: B;
+    text-align: center;
 }
 
 .sectionC {
     grid-area: C;
+    text-align: center;
 }
 
 .container {
