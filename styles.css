@@ -4,19 +4,41 @@ html {
 
 }
 
+main {
+    background-color: azure;
+    display: grid;
+    grid-template-columns: ;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 1fr 1fr 1fr;
     grid-auto-rows: 1fr;
+    background-color: green;
 }
 
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+
+}
+
+.logo {
+    background-color: antiquewhite;
+}
+
+.nav {
+    background-color: blueviolet;
+}
+
+.header:hover {
+    background-color: aliceblue;
 }
 
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: aquamarine;
 }
