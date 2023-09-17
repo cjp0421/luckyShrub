@@ -65,4 +65,13 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: aquamarine;
+    grid-gap: 5px;
+}
+
+.littleLogo {
+    background-color: yellow;
+}
+
+.copyright {
+    background-color: antiquewhite;
 }
