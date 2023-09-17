@@ -4,14 +4,25 @@ html {
 
 }
 
+.container {
+    display: grid;
+    grid-template: repeat(auto, 1fr) / repeat(auto, 1fr);
+    grid-template-areas:
+        "h h h"
+        "m m m"
+        "f f f";
+    background-color: green;
+}
+
 main {
+    grid-area: m;
     background-color: azure;
     display: grid;
-    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    grid-template: 2fr 4fr / repeat(3, 1fr);
     grid-template-areas:
         "PB PB PB"
         "A B C";
-
+    grid-gap: 2px;
 }
 
 .promotionalBanner {
@@ -34,17 +45,8 @@ main {
     text-align: center;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr 1fr 1fr;
-    grid-auto-rows: 1fr;
-    background-color: green;
-}
-
 .header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-area: h;
     grid-gap: 5px;
 
 }
@@ -62,6 +64,7 @@ main {
 }
 
 .footer {
+    grid-area: f;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: aquamarine;
@@ -74,4 +77,18 @@ main {
 
 .copyright {
     background-color: antiquewhite;
+}
+
+.sectionA:hover,
+.sectionB:hover,
+.sectionC:hover {
+    background-color: cyan;
+}
+
+.sectionA,
+.sectionB,
+.sectionC {
+    border-color: blue;
+    border-width: 2px;
+    border-style: double;
 }
