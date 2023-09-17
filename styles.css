@@ -1,6 +1,6 @@
 html {
     margin: 0px;
-    padding: 0 px;
+    padding: 0px;
 
 }
 
@@ -18,7 +18,7 @@ main {
     grid-area: m;
     background-color: azure;
     display: grid;
-    grid-template: 2fr 4fr / repeat(3, 1fr);
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     grid-template-areas:
         "PB PB PB"
         "A B C";
@@ -28,6 +28,8 @@ main {
 .promotionalBanner {
     grid-area: PB;
     text-align: center;
+    background-image: url(/assets/dreamGarden.jpg);
+    background-size: cover;
 }
 
 .sectionA {
@@ -48,7 +50,10 @@ main {
 .header {
     grid-area: h;
     grid-gap: 5px;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: aquamarine;
+    grid-gap: 5px;
 }
 
 .logo {
