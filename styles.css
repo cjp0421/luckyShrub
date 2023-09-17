@@ -7,7 +7,26 @@ html {
 main {
     background-color: azure;
     display: grid;
-    grid-template-columns: ;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    grid-template-areas:
+        "PB PB PB"
+        "A B C";
+}
+
+.promotionalBanner {
+    grid-area: PB;
+}
+
+.sectionA {
+    grid-area: A;
+}
+
+.sectionB {
+    grid-area: B;
+}
+
+.sectionC {
+    grid-area: C;
 }
 
 .container {
