@@ -1,16 +1,17 @@
-html {
+html,
+body {
     margin: 0px;
     padding: 0px;
-
 }
+
 
 .container {
     display: grid;
-    grid-template: repeat(auto, 1fr) / repeat(auto, 1fr);
+    grid-template: repeat(1, 1fr) / repeat(2, 1fr);
     grid-template-areas:
-        "h h h"
-        "m m m"
-        "f f f";
+        "h h"
+        "m m"
+        "f f";
     background-color: rgba(38, 135, 127, 255);
 }
 
@@ -23,7 +24,6 @@ main {
         "PB PB PB"
         "H1 H1 H1"
         "A B C";
-    grid-gap: 4px;
     text-align: center;
     padding-top: 10%;
 }
@@ -35,13 +35,7 @@ main {
     width: 100%;
     color: rgba(38, 135, 127, 255);
     -webkit-text-fill-color: rgba(38, 135, 127, 255);
-    -webkit-text-stroke: .5px
-}
-
-h3 {
-    font-size: 40px;
-    margin-top: 3%;
-    padding: 0px;
+    -webkit-text-stroke: .5px;
 }
 
 h4 {
@@ -50,6 +44,11 @@ h4 {
     -webkit-text-stroke: .5px rgb(104, 102, 102);
     padding: 5%;
     text-shadow: 2px 2px 2px #C7CEC6;
+}
+
+h3 {
+    font-size: 35px;
+    padding: 0px;
 }
 
 a {
@@ -85,7 +84,7 @@ a:hover {
     background-repeat: no-repeat;
     min-height: 60vh;
     position: relative;
-    top: 10px;
+    /* top: 10px; */
 }
 
 .bannerFilter {
@@ -93,16 +92,25 @@ a:hover {
     min-height: 50vh;
 }
 
+.header {
+    grid-area: h;
+    position: fixed;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: antiquewhite;
+}
+
 .topLogo {
-    display: block;
-    width: 10%;
-    margin: 5px auto;
+    width: 8%;
+    margin: 10px auto;
 }
 
 .bottomLogo {
     display: block;
     width: 8%;
     margin: 5px auto;
+    background-color: antiquewhite;
 }
 
 .sectionA {
@@ -120,50 +128,34 @@ a:hover {
     text-align: center;
 }
 
-.header {
-    grid-area: h;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: antiquewhite;
-    grid-gap: 5px;
-    position: fixed;
-
-    z-index: 1;
-
-}
-
-.logo {
-    background-color: antiquewhite;
-}
-
 .nav {
     display: flex;
-    background-color: antiquewhite;
     text-align: center;
     justify-content: space-evenly;
     align-self: last baseline;
+    font-size: large;
 }
+
 
 .footer {
     grid-area: f;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: aquamarine;
-    grid-gap: 5px;
-}
-
-.littleLogo {
     background-color: antiquewhite;
+    gap: 5px;
 }
 
 .copyright {
     background-color: antiquewhite;
+    display: inline-flex;
+    justify-content: flex-end;
+    padding: 8%;
 }
 
 .sectionA:hover,
 .sectionB:hover,
 .sectionC:hover {
-    background-color: antiquewhite;
+    box-shadow: 10px 10px 51px 10px rgba(145, 173, 140, 1);
 }
 
 .sectionA,
@@ -174,5 +166,33 @@ a:hover {
     border-style: double;
     background-color: antiquewhite;
     margin: 2.5px;
+    margin-bottom: 30px;
     padding: 5px;
+}
+
+
+
+.text {
+    font-size: 50px;
+    text-align: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 400%;
+    animation: move 10s ease infinite;
+    background-image: linear-gradient(68.7deg, rgb(29, 235, 98) 10.2%, rgb(11, 79, 49) 29.8%, rgb(1, 46, 12) 48.9%, rgba(255, 68, 128, 1) 68.2%, rgb(68, 101, 1) 86.4%);
+    text-shadow: 1px 2px 2px #1f4e199d;
+
+}
+
+@keyframes move {
+
+    0%,
+    100% {
+        background-position: 200% 0%;
+    }
+
+    50% {
+        background-position: 0% 200%;
+    }
 }
