@@ -11,41 +11,75 @@ html {
         "h h h"
         "m m m"
         "f f f";
-    background-color: green;
+    background-color: rgba(38, 135, 127, 255);
 }
 
 main {
     grid-area: m;
-    background-color: azure;
+    background-color: antiquewhite;
     display: grid;
-    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    grid-template: repeat(auto, 1fr) / repeat(3, 1fr);
     grid-template-areas:
         "PB PB PB"
+        "H1 H1 H1"
         "A B C";
     grid-gap: 2px;
+    text-align: center;
+
+}
+
+.section1 {
+    grid-area: H1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: rgba(38, 135, 127, 255);
+    -webkit-text-fill-color: rgba(38, 135, 127, 255);
+    -webkit-text-stroke: .5px rgb(56, 55, 55);
+}
+
+a {
+    color: rgba(38, 135, 127, 255);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgba(38, 135, 127, 255);
+    font-weight: 900;
+}
+
+a:hover {
+    color: rgba(38, 135, 127, 255);
+    text-decoration: underline;
 }
 
 .mainPromoBanner {
     color: black;
     font-size: 34px;
     font-weight: 900;
-    min-height: 30vh;
-    -webkit-text-fill-color: green;
-    -webkit-text-stroke: .5px rgb(220, 220, 220);
-    background-color: hsla(58, 25%, 78%, 0.8);
+    -webkit-text-fill-color: rgba(38, 135, 127, 255);
+    -webkit-text-stroke: .5px rgb(56, 55, 55);
+
 }
 
 .promotionalBanner {
     grid-area: PB;
     text-align: center;
     background-image: url(/assets/dreamGarden.jpg);
-    background-size: 110%;
+    background-size: cover;
     background-repeat: no-repeat;
+    min-height: 50vh;
+    position: relative;
+}
+
+.bannerFilter {
+    background-color: hsla(58, 25%, 78%, 0.8);
+    min-height: 50vh;
 }
 
 .topLogo {
     display: block;
-    width: 20%;
+    width: 15%;
     margin: 5px auto;
 }
 
@@ -110,7 +144,10 @@ main {
 .sectionA,
 .sectionB,
 .sectionC {
-    border-color: blue;
+    border-color: rgba(38, 135, 127, 255);
     border-width: 2px;
     border-style: double;
+    background-color: antiquewhite;
+    margin: 2.5px;
+    padding: 5px;
 }
