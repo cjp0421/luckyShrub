@@ -35,7 +35,15 @@ main {
     width: 100%;
     color: rgba(38, 135, 127, 255);
     -webkit-text-fill-color: rgba(38, 135, 127, 255);
-    -webkit-text-stroke: .5px rgb(56, 55, 55);
+    -webkit-text-stroke: .5px
+}
+
+h4 {
+    font-weight: 550;
+    -webkit-text-fill-color: rgb(56, 55, 55);
+    -webkit-text-stroke: .5px rgb(104, 102, 102);
+    padding: 10%;
+    text-shadow: 2px 2px 2px #C7CEC6;
 }
 
 a {
@@ -59,7 +67,7 @@ a:hover {
     font-weight: 900;
     -webkit-text-fill-color: rgba(38, 135, 127, 255);
     -webkit-text-stroke: .5px rgb(56, 55, 55);
-
+    text-shadow: 1px 2px 2px #1f4e199d;
 }
 
 .promotionalBanner {
@@ -70,6 +78,7 @@ a:hover {
     background-repeat: no-repeat;
     min-height: 50vh;
     position: relative;
+
 }
 
 .bannerFilter {
