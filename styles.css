@@ -32,7 +32,7 @@ main {
     min-height: 30vh;
     -webkit-text-fill-color: green;
     -webkit-text-stroke: .5px rgb(220, 220, 220);
-    background-color: hsla(120, 75%, 75%, .8);
+    background-color: hsla(58, 25%, 78%, 0.8);
 }
 
 .promotionalBanner {
@@ -44,10 +44,9 @@ main {
 }
 
 .topLogo {
-    float: right;
+    display: block;
     width: 20%;
-    padding: 5px;
-    margin-right: 110px;
+    margin: 5px auto;
 }
 
 .sectionA {
