@@ -32,14 +32,23 @@ main {
     grid-area: H1;
     display: flex;
     justify-content: center;
-    width: 100%;
+    justify-self: center;
+    width: 84%;
     color: rgba(38, 135, 127, 255);
     -webkit-text-fill-color: rgba(38, 135, 127, 255);
     -webkit-text-stroke: .5px;
+    border-color: rgba(38, 135, 127, 255);
+    border-width: 2px;
+    border-style: double;
+    margin: 10px;
+    box-shadow: 10px 10px 10px 5px rgb(190, 198, 188);
+    background-color: #ffffff;
 }
+
 
 h4 {
     font-weight: 550;
+    font-size: larger;
     -webkit-text-fill-color: rgb(56, 55, 55);
     -webkit-text-stroke: .5px rgb(104, 102, 102);
     padding: 5%;
@@ -82,14 +91,19 @@ a:hover {
     background-image: url(/assets/dreamGarden.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 60vh;
+    min-height: 30vh;
     position: relative;
     /* top: 10px; */
 }
 
+.middleLogo {
+    width: 10%;
+    margin: 1% 5%;
+}
+
 .bannerFilter {
     background-color: hsla(58, 25%, 78%, 0.8);
-    min-height: 50vh;
+    min-height: 20vh;
 }
 
 .header {
@@ -103,7 +117,7 @@ a:hover {
 
 .topLogo {
     width: 8%;
-    margin: 10px auto;
+    margin: 5px auto;
 }
 
 .bottomLogo {
@@ -155,7 +169,7 @@ a:hover {
 .sectionA:hover,
 .sectionB:hover,
 .sectionC:hover {
-    box-shadow: 10px 10px 51px 10px rgba(145, 173, 140, 1);
+    box-shadow: 10px 10px 51px 10px rgb(151, 170, 147);
 }
 
 .sectionA,
@@ -164,13 +178,11 @@ a:hover {
     border-color: rgba(38, 135, 127, 255);
     border-width: 2px;
     border-style: double;
-    background-color: antiquewhite;
+    background-color: #ffffff;
     margin: 2.5px;
     margin-bottom: 30px;
     padding: 5px;
 }
-
-
 
 .text {
     font-size: 50px;
@@ -185,6 +197,18 @@ a:hover {
 
 }
 
+.tree {
+    width: 35%;
+}
+
+.flowers {
+    width: 75%;
+}
+
+.decorations {
+    width: 95%;
+}
+
 @keyframes move {
 
     0%,
@@ -194,5 +218,13 @@ a:hover {
 
     50% {
         background-position: 0% 200%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    a {
+        font-size: small;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
