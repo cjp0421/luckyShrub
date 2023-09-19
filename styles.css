@@ -17,7 +17,7 @@ body {
 
 main {
     grid-area: m;
-    background-color: antiquewhite;
+    background-color: #cae6cc;
     display: grid;
     grid-template: repeat(auto, 1fr) / repeat(3, 1fr);
     grid-template-areas:
@@ -63,6 +63,7 @@ h3 {
 a {
     color: rgba(38, 135, 127, 255);
     text-decoration: none;
+    padding: 1%;
 }
 
 a:visited {
@@ -112,7 +113,7 @@ a:hover {
     z-index: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: antiquewhite;
+    background-color: #ffffff;
 }
 
 .topLogo {
@@ -122,9 +123,9 @@ a:hover {
 
 .bottomLogo {
     display: block;
-    width: 8%;
+    width: 9%;
     margin: 5px auto;
-    background-color: antiquewhite;
+    background-color: #ffffff;
 }
 
 .sectionA {
@@ -155,12 +156,12 @@ a:hover {
     grid-area: f;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: antiquewhite;
+    background-color: #ffffff;
     gap: 5px;
 }
 
 .copyright {
-    background-color: antiquewhite;
+    background-color: #ffffff;
     display: inline-flex;
     justify-content: flex-end;
     padding: 8%;
@@ -227,4 +228,9 @@ a:hover {
         padding-left: 5px;
         padding-right: 5px;
     }
+
+    .middleLogo {
+        display: none;
+    }
+
 }
